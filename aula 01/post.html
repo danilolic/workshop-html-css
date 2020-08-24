@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Aula 01</title>
+</head>
+
+<body style="font-family: 'Open Sans', sans-serif;">
+  <div class="container">
+    <h1>Prática 01</h1>
+
+    <h3>O que nós vamos fazer?</h3>
+    <p>
+      Vamos criar uma página HTML mostrando como fazer um delicioso Pudim! &#128540;. Eu sei, é algo super simples, mas
+      vai exercitar algumas tags que nós já aprendemos. Todo mundo começa do mais simples para o mais complexo, então
+      vamos com calma.
+    </p>
+
+    <p>
+      Chega de conversa e lets que lets. Abra o Visual Studio Code, crie um arquivo HTML com o nome que você quiser e
+      salve em algum lugar no teu PC. O meu vai ser receita_de_pudim.html
+    </p>
+
+    <p>Com o arquivo aberto digite exclamação e depois aperte
+      <a target="_blank"
+        href="https://s2.glbimg.com/N5tdIe702PYqr9TIiGZmrqN772s=/696x390/top/smart/s2.glbimg.com/bteRXxRK8XYKpHxAY5_7nBbCkiE=/0x0:694x397/695x398/s.glbimg.com/po/tt2/f/original/2015/09/18/teclado_1.jpg">tab</a>
+      e veja a mágica que o VS Code vai fazer:</p>
+    <img width="1200" height="659" src="html-snippet.gif" alt="html snippet">
+
+    <p>
+      O VS Code criou a estrutura básica que todo HTML precisa para iniciar uma página. No Título vamos mudar para
+      Receita de Pudim. Importante dizer que o VS Code tem muitos atalhos de teclado que vão te ajudar muito no dia a
+      dia de desenvolvimento, quanto mais você usar mais produtivo você será. No HTML, toda vez que você criar uma tag é
+      só digitar o nome da tag e apertar tab. Por exemplo, digite "p" (sem as aspas) e aperte tab e veja a mágica.
+    </p>
+
+    <p>
+      <b>OBS:</b> Dan, por que seu VS Code tem post.html? post.html é essa página que você está lendo, eu pretendo fazer
+      os exercícios em formato de blog post então é isso, eu resolvi criar os exercícios escrevendo as instruções em uma
+      página HTML, fica bem mais fácil.
+    </p>
+
+    <p>
+    <ul>
+      <li>
+        Dan, e essa tag meta com name="viewport", o que é isso? Calma, vamos conversar sobre isso nas próximas aulas,
+        mas é essa tag que permite que essa página se adapte a resoluções de tela de smartphone.
+      </li>
+      <li>
+        E esse UTF-8 o que é? Isso permite que você use caracteres com acento e Ç, experimente escrever um Ç sem usar
+        o UTF-8 e veja o que acontece.
+      </li>
+    </ul>
+
+
+    </p>
+
+    <p>
+      Toda receita começa (ou deveria começar) com uma foto ou vídeo para incentivar a pessoa a fazer. A pessoa tem que
+      pensar olhando a foto: Olha só que pudim bonito, pudim bem feito, pudim formoso, vou fazer! Então nós vamos
+      procurar uma foto no Google, pegue a foto do pudim mais bonito que você encontrar e adicione logo no início.
+    </p>
+
+    <img width="1200" height="659" src="vscode01.png" alt="adiciona imagem de pudim">
+
+    <p>
+      Eu peguei uma foto enorme e meu pudim ocupou muito da minha tela, então eu usei o width e o height para ajustar
+      largura e altura da imagem. E o que significa esse alt na imagem?
+    </p>
+
+    <p>
+      <a
+        href="https://blog.handtalk.me/texto-alternativo-alt/#:~:text=O%20texto%20alternativo%20%C3%A9%20utilizado,alt%20na%20tag%20.">
+        O texto alternativo é utilizado para descrever o conteúdo de uma imagem, ele é inserido através do atributo alt
+        na tag img. Além de auxiliar o usuário em situações, como um erro no carregamento da imagem devido a uma conexão
+        ruim ou até um erro na url da imagem, é também de suma importância para os deficientes visuais. Visto que é pela
+        descrição da imagem que os cegos conseguem identificar do que se trata o “gráfico” (nome dado pelos leitores de
+        tela para sinalizar que naquele local existe uma imagem, mesmo quando não existe o alt na tag img).</a>
+    </p>
+
+    <p>Quais os tipos de títulos no HTML e qual a diferença de cada um? É bem simples, a diferença é só o tamanho de
+      cada um. Olha essa <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings">referência</a>
+    </p>
+    <p>Próximo passo: Título da receita, afinal tem muitos tipos de pudim. Vou usar o
+    <h2> h2 Pudim de Leite Condensado MOÇA</h2>
+    </p>
+
+    <p>
+      agora os igredientes: vou usar o h4 para criar o título da seção que vai se chamar INGREDIENTES. Temos lista para
+      a calda e uma para o pudim.
+      então vamos listar os dois. O HTML já tem as tags para lista, então vamos criar duas listas não ordenadas
+    </p>
+
+    <p>
+      <b>CALDA:</b>
+    </p>
+    <ul>
+      <li>1 xícara (chá) de açúcar</li>
+    </ul>
+
+    <p><b>PUDIM</b></p>
+    <ul>
+      <li>1 Leite MOÇA® (lata ou caixinha) 395g</li>
+      <li>2 medidas (da lata) de Leite Líquido NINHO Forti+ Integral</li>
+      <li>3 ovos</li>
+    </ul>
+
+    <p>
+      Vamos para o modo de preparo. Vou usar o h4 para criar o título da seção que vai se chamar MODO DE PREPARO.
+      Novamente temos a calda e o pudim. Vamos criar uma lista ordenada para o modo de preparo, afinal se você não fizer
+      na ordem vai dar ruim, tipo aquelas receitas <br> <b>expectativa vs realidade</b>:
+    </p>
+
+    <img width="800" height="600" src="receita_falha.jpeg" alt="receita que deu errado">
+
+    <p>Então vamos lá:</p>
+    <p>Calda:</p>
+    <ol>
+      <li>Em uma panela de fundo largo, derreta o açúcar até ficar dourado.</li>
+      <li>Junte meia xícara (chá) de água quente e mexa com uma colher.</li>
+      <li>Deixe ferver até dissolver os torrões de açúcar e a calda engrossar.</li>
+      <li>Forre com a calda uma forma com furo central (19 cm de diâmetro) e reserve.</li>
+    </ol>
+
+    <p>Pudim:</p>
+    <ol>
+      <li>Em um liquidificador, bata todos os ingredientes do pudim e despeje na forma reservada.</li>
+      <li>Cubra com papel-alumínio e leve ao forno médio (180°C), em banho-maria, por cerca de 1 hora e 30 minutos.</li>
+      <li>Depois de frio, leve para gelar por cerca de 6 horas. Desenforme e sirva a seguir.</li>
+    </ol>
+
+    <p>
+      Vamos criar uma seção de dicas para ajudar o leitor a acertar e criar o melhor pudim da vida dele. Vou criar com
+      um h4
+    </p>
+
+    <h4>Dicas</h4>
+
+    <p>seguido de uma lista não ordenada com as informações:</p>
+    <ul>
+      <li>É essencial que o pudim seja preparado em banho-maria para que asse de forma lenta e controlada, para atingir
+        a textura ideal.</li>
+      <li>Para que o seu pudim não forme furinhos, verifique se a temperatura do forno está regulada conforme indicação
+        da receita. Leve a forma ao forno na grade superior, longe da chama.</li>
+    </ul>
+
+    <p>Veja como ficou até agora:</p>
+
+    <img width="1200" height="659" src="vscode02.png" alt="adiciona igrediente e modo de preparo">
+
+    <p>Usei a TAG b para colocar fonte negrito onde eu queria, fica sua decisão usar ou não.</p>
+    <p>
+      Para finalizar vamos criar uma tabela de equivalências já que existem potes de leite moça com diferentes
+      quantidades. Precisamos saber como seria as quantidades se o pote fosse de 395g ou 340g ou 260g
+    </p>
+
+    <table style="width:100%; border: 1px solid black">
+      <thead>
+        <tr>
+          <td>Leite Moça</td>
+          <td>395g</td>
+          <td>340g</td>
+          <td>260g</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Açucar(Calda)</td>
+          <td>1 xícara (chá)</td>
+          <td>1 xícara (chá)</td>
+          <td>meia xícara (chá)</td>
+        </tr>
+        <tr>
+          <td>Ovos</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Leite</td>
+          <td>600 ml</td>
+          <td>500 ml</td>
+          <td>400 ml</td>
+        </tr>
+        <tr>
+          <td>Forma</td>
+          <td>19 cm</td>
+          <td>19 cm</td>
+          <td>16 cm</td>
+        </tr>
+        <tr>
+          <td>Tempo de Forno</td>
+          <td>1 hora e 30 minutos</td>
+          <td>1 hora e 30 minutos</td>
+          <td>1 hora</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>O que significa cada tag da tabela?</p>
+
+    <ul>
+      <li>table: define que é uma tabela (OK, fácil)</li>
+      <li>thead: table head, define o cabeçalho de uma tabela</li>
+      <li>tbody: table body, define o corpo de uma tabela</li>
+      <li>tr: table row, define uma linha de uma tabela, no nosso caso 6 linhas, logo serão 6 tr</li>
+      <li>td: table data, define uma célula da tabela, dentro de cada linha (tr) tem algumas td. Com 6 linhas e 4
+        colunas, temos 24 td</li>
+    </ul>
+
+    <p>Nosso cabeçalho é a primeira linha da tabela. Então dentro do thead tem um tr e dentro do tbody tem as outras 5
+      tr</p>
+
+    <p>
+      Dá uma olhada <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_tbody">nesse</a> HTML para
+      entender a estrutura e logo depois tenta fazer a tabela.
+    </p>
+
+    <p>
+      Claro você pode só abrir o código fonte desse post e pegar a tabela que eu fiz ou olhar o print abaixo, mas aí
+      você não aprenderá nada no
+      processo. Sempre tente fazer antes de olhar a resposta!
+    </p>
+
+    <br>
+    <br>
+
+    <p>Veja como ficou:</p>
+
+    <img width="1200" height="659" src="vscode-table.png" alt="html table">
+
+    <p>
+      Criar tabelas é meio demorado e um pouco difícil de entender no início, tem várias tags, mas lets que lets,
+      qualquer dúvida estamos por aí.
+    </p>
+
+    <p> <b>Desafio super simples:</b> </p>
+    <p>Coloque um pouco de estilo na sua tabela, defina uma borda e coloque tamanhos diferentes em cada coluna</p>
+    <p>Use essa <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_td_width_css">referência</a></p>
+
+    <img width="400" height="200"
+      src="https://pm1.narvii.com/7356/5539dc0a67046f5606701c2df1ad28ee348bcd11r1-1280-720v2_uhq.jpg"
+      alt="as vezes dou uma sumida mas sempre to na área">
+
+    <P>
+      Com isso nós usamos as estruturas de texto, tanto parágrafo quanto título; lista, tanto ordenada como não
+      ordenada; tabela e imagens
+    </P>
+  </div>
+</body>
+
+</html>
