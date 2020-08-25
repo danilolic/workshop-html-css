@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Teoria 01</title>
+</head>
+
+<body style="font-family: 'Open Sans', sans-serif;">
+  <div class="container">
+    <h1>Teoria 01</h1>
+    <p>
+      Ao acessar uma página web através de um navegador, ele é capaz de interpretar o código HTML e renderizá-lo de
+      forma
+      compreensível para o usuário final, exibindo textos, botões etc. com as configurações definidas por meio das
+      diversas tags que essa linguagem dispõe
+    </p>
+
+    <h1>Estrutura básica de uma página HTML</h1>
+
+    <p>
+      A estrutura básica de uma página HTML pode ser vista na Listagem 1, na qual podemos ver as principais tags que são
+      necessárias para que o documento seja corretamente interpretado pelos navegadores.
+    </p>
+
+    <img width="1024" height="500" src="html-structure.png" alt="Estrutura básica do HTML">
+
+
+    <p>
+      Linha 1: a instrução DOCTYPE deve ser sempre a primeira a aparecer em uma página HTML para indicar ao browser
+      qual versão da linguagem usada. Nesse caso, estamos trabalhando com a HTML5, versão na qual a declaração do
+      DOCTYPE é bastante simples, como podemos ver na listagem;
+    </p>
+
+    <p>
+      Linhas 2 e 10: abertura e fechamento da tag html, que delimita o documento. Sendo assim, todas as demais tags da
+      página devem estar nesse espaço;
+    </p>
+
+    <p>
+      Linhas 3 e 6: abertura e fechamento da tag head, que define o cabeçalho do documento. O conteúdo nesse espaço não
+      é visível no browser, mas contém instruções sobre seu conteúdo e comportamento. Dentro dessa tag, por exemplo,
+      podem ser inseridas folhas de estilo e scripts;
+    </p>
+
+    <p>
+      Linha 4: a tag meta, nesse caso, especifica qual conjunto de caracteres (character set ou charset) será usado
+      para renderizar o texto da página. O UTF-8 contém todos os caracteres dos padrões Unicode e ASCII, sendo,
+      portanto, o mais utilizado em páginas web. A mesma tag meta, porém com outros atributos, pode ser utilizada para
+      outros fins, como na SEO (Search Engine Optimization);
+    </p>
+
+    <p>
+      Linha 5: a tag title define o título da página, aquele que aparece na janela/aba do navegador;
+    </p>
+
+    <p>
+      Linhas 7 e 9: abertura e fechamento da tag body, marcando o espaço no qual deve estar contido o conteúdo visual
+      da página. As demais tags que representam texto, botões etc. devem ser adicionadas nesse intervalo;
+    </p>
+
+    <p>
+      <b>OBS: </b>
+      A principal característica do HTML é que existe uma tag de início e uma de fim. Então se você abre um parágrafo
+      &lt;p&gt; você necessariamente precisa fechar ele em algum momento com &lt;/p&gt;. A Estrutura básica do HTML se
+      divide em head e body (cabeçalho e corpo), onde o head é para colocar dados úteis para interpretação do navegador,
+      mas o usuário só vai enxergar o que for colocado dentro do body. Futuramente veremos mais coisas que podem ser
+      colocadas dentro do head.
+    </p>
+
+    <p>
+      Outro aspecto importante da linguagem é que ela é case insensitive, ou seja, não leva em consideração a diferença
+      entre letras maiúsculas e minúsculas. No entanto, o uso apenas de letras minúsculas tem sido utilizado como padrão
+      pelos desenvolvedores. <b>Use somente minúsculas</b>
+    </p>
+
+    <h1>Primeiras Tags do HTML</h1>
+
+    <h4>Cabeçalhos do HTML</h4>
+
+    <p>
+      Cabeçalhos são normalmente utilizados para identificar páginas e seções e possuem aparência diferenciada do
+      restante do texto. No HTML há seis níveis de cabeçalhos/títulos que podem ser utilizados por meio das tags h1, h2,
+      h3, h4, h5 e h6, sendo h1 o maior/mais relevante e h6 o menor/menos relevante.
+    </p>
+
+    <p>A diferença está no tamanho de cada um. Olha só nessa
+      <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings">referência</a>
+    </p>
+
+    <h4>Parágrafos no HTML</h4>
+    <p>
+      Parágrafos de texto são gerados na HTML por meio das tags &lt;p&gt; &lt;/p&gt;. Esse é um exemplo de tag cuja
+      disposição na tela se dá em forma de bloco, ou seja, um parágrafo é posto sempre abaixo do outro.
+    </p>
+
+    <p>
+      Olha essa
+      <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1">referência</a>
+    </p>
+
+    <h4>Imagens no HTML</h4>
+
+    <p>
+      A inserção de imagens em uma página HTML pode ser feita por meio da tag img, que recebe no atributo src o
+      endereço do arquivo a ser carregado. Além desse, outros dois atributos importantes são o alt, que indica um texto
+      alternativo que será exibido caso o arquivo não possa ser carregado, e title, que indica o texto que aparecerá
+      como tooltip ao passar o mouse sobre a figura.
+    </p>
+
+    <p>
+      Olha essa
+      <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli">Referência</a>
+    </p>
+
+    <h4>Links no HTML</h4>
+    <p>
+      Links são normalmente utilizados para direcionar o usuário para outras páginas, ou para outras partes da mesma
+      página. Nos dois casos, utilizamos a tag a, que possui o atributo href no qual indicamos o destino daquele link.
+    </p>
+
+    <p>
+      Olha essa
+      <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools">Referência</a>
+    </p>
+
+    <h4>Tabelas no HTML</h4>
+
+    <p>
+      Tabelas são elementos utilizados com frequência para exibir dados de forma organizada em linhas e colunas. No
+      HTML, elas são formadas por três tags básicas: table, para delimitar a tabela; tr, para indicar as linhas; e td
+      para formar as colunas. A Listagem 7 mostra um exemplo simples de tabela com três linhas e duas colunas.
+    </p>
+
+    <p>
+      Olha essa
+      <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro">Referência</a>
+    </p>
+
+    <h4>Listas no HTML</h4>
+
+    <p>
+      Listas são elementos úteis para organizar e ordenar itens que estão relacionados de alguma forma. No HTML é
+      possível criar três tipos de listas: ordenadas (com a tag ol), não ordenadas (com a tag ul), e de definição (por
+      meio da tag dl).
+    </p>
+
+    <p>Vamos manipular principalmente a não ordenada e a ordenada</p>
+
+    <p>
+      Não ordenada
+      <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered">Referência</a>
+    </p>
+
+    <p>
+      ordenada
+      <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered">Referência</a>
+    </p>
+
+    <h4>Formatação de texto</h4>
+    <p>
+      As tags de formatação de texto ajudam a destacar trechos da parte escrita da página, seja para fins de SEO ou por
+      requisitos do conteúdo. Formatações como negrito e itálico podem ser aplicadas com facilidade utilizando as várias
+      tags disponíveis para esse fim:
+    </p>
+
+    <ul>
+      <li>&lt;b&gt; e strong para negrito/texto forte</li>
+      <li>&lt;i&gt; e em para itálico/ênfase</li>
+      <li>&lt;sup&gt; e sub para sobrescrito e subscrito, respectivamente</li>
+      <li>&lt;ins&gt; e del para indicar trechos que foram incluídos ou removidos, respectivamente</li>
+      <li>&lt;small&gt; para textos menores que o padrão</li>
+      <li>&lt;mark&gt; para texto destacado</li>
+    </ul>
+
+    <p>
+      Olha essa
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro">Referência</a>
+    </p>
+  </div>
+</body>
+
+</html>
