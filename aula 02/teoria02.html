@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Teoria 02</title>
+</head>
+
+<body style="font-family: 'Open Sans', sans-serif;">
+  <div class="container">
+    <h1>DIV e HTML 5</h1>
+
+    <p>
+      Na última teoria nós vimos tags textuais e tags de conteúdo. A aula de hoje é sobre tags estruturais. Para
+      entender tags estruturais você precisa ter uma das habilidades mais importantes de um bom dev Front-end. Você
+      precisa saber identificar os componentes de uma página só de bater o olho na página.
+    </p>
+
+    <p>
+      Vou te mostrar um exemplo. Eu uso o <a href="https://www.trackseries.tv">https://www.trackseries.tv</a> para
+      listar as séries que eu já assisti e as que eu estou assistindo. Vamos ver como é a estrutura do site.
+      <b>
+        Na Pasta dessa teoria eu deixei uma imagem my-tv-series.png abra ela no navegador e veja as minhas marcações.
+      </b>
+    </p>
+
+    <p>
+      Vou apresentar alguns elementos. O aside é um elemento caracterizado por ficar no canto da página, não importa se
+      é direita ou esquerda, muitas vezes nem temos um aside. Temos dentro do aside um menu de navegação que no HTML 5 é
+      representado pela tag &lt;nav&gt;, é bem comum ter um menu quando se tem um aside, mas você pode encontrar o
+      menu dentro do header também.
+    </p>
+
+    <p>Temos o Header que nesse caso só possui um buscador dentro dele. Super simples.</p>
+
+    <p>
+      Temos um container e aqui eu quero que você tenha a consciência que sempre que voce tiver uma lista de alguma
+      coisa, existe um container. Nesse caso temos uma lista de séries, essa lista é o container que "contém" todos os
+      cards.
+    </p>
+
+    <p>
+      Por fim, nós temos cada série, é bem comum chamar essa estrutura de card. Então nós dizemos que temos vários cards
+      de série.
+    </p>
+
+    <p>
+      Temos uma estrutura chamada de footer que não aparece nesse site, mas a ideia do footer é ficar no final
+      da página, geralmente com informações para contato e links para redes sociais. Olha esse footer do site da Ribon:
+      <a target="_blank" href="https://home.ribon.io/">Ribon</a> desça até o final da página ein!
+    </p>
+
+    <p>
+      Claro, eu poderia ir mais fundo no menu de navegação (nav) e dizer que temos uma lista não ordenada dentro dele.
+      Poderia ir mais fundo no card dizendo que cada card tem 3 seções: uma imagem, um título, e uma seção de info dos
+      episódios, embora a ideia aqui seja mostrar as estruturas maiores.
+    </p>
+
+    <p>
+      A boa notícia é que as páginas tem estruturas bem parecidas, independente do site, se você pegar o Youtube por
+      exemplo vai ver muitas semelhanças com o trackseries.
+    </p>
+
+
+
+    <h1>E cadê a DIV?</h1>
+
+    <p>
+      Bom, antes do HTML 5 alguns desses elementos que eu citei não existiam, por exemplo o header não tinha uma tag
+      &lt;header&gt; o menu não tinha uma tag &lt;nav&gt; o aside não tinha tag &lt;aside&gt;. Então como era feito? Nós
+      usávamos a tag &lt;div&gt;. A div é uma tag genérica que pode imitar o comportamento de qualquer outra tag e é
+      provavelmente a tag mais usada no HTML. Isso porque o card de série não tem tag adequeda, não existe uma tag
+      &lt;card-de-série&gt;, então é aqui que a div entra. O HTML tentou com essas tags estruturais dar mais significado
+      ao código de forma que qualquer dev olhe para o código HTML e consiga reconhecer uma estrutura com facilidade, mas
+      claro que estruturas muito específicas não vão ter uma tag, então nós usamos div.
+    </p>
+
+    <img
+      src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2017/04/differences-between-html-and-html5.png"
+      alt="html 4 versus html 5">
+
+    <h1>Class e ID</h1>
+    <p>
+      Já pegando o gancho que aparece na foto acima. Em algumas divs tem class e outras tem ID. O ID é usado para
+      identificar um único elemento na página, nós só temos um único header logo o ele é um bom elemento para ter ID.
+      Quando temos vários elementos que se repetem e nós queremos fazer algo com todos esses elementos nós usamos o
+      class. Mas para que eu quero identificar esses elementos? Você vai precisar identificar para colocar CSS nos
+      elementos ou criar algum código javascript, mas isso é o tema das próximas aulas, então por enquanto só saiba que
+      class identifica vários elementos e id identifica um único elemento.
+    </p>
+
+    <h1>Finalmente</h1>
+
+    <p>
+      Como experimento, eu gostaria que você encontrasse um site que você goste e identificasse as estruturas dele. Se
+      você quiser, pode fazer igual eu e marcar cada componente da página com paint ou qualquer outra ferramenta. Se
+      você mandar essa atividade eu te passo o feedback.
+    </p>
+
+    <p>Próxima aula veremos esse tal de CSS</p>
+  </div>
+</body>
+
+</html>
